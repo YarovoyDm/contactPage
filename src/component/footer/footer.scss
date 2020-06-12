@@ -1,0 +1,89 @@
+.footer {
+    height: 471px;
+    box-sizing: border-box;
+    background: #142333;
+    display: flex;
+    flex-direction: column;
+    &__top {
+        height: calc(100% - 85px);
+        padding: 104px 114px 52px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    &__top-text {
+        width: 660px;
+        color: #707e8c;
+        p {
+            font-size: 18px;
+            &:nth-child(1n) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__bottom {
+        background: #202f40;
+        height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 114px;
+    }
+    &__bottom-menu{
+        .menu__item{
+            color: #707e8c;
+        }
+    }
+    &__bottom-copyright{
+        font-size: 18px;
+        color: #707e8c;
+    }
+}
+
+.top-contact {
+    width: 240px;
+    position: relative;
+    &__title {
+        color: #707e8c;
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    &__socials {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__socials-item {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(112, 126, 140, 0.15);
+        border-radius: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:nth-child(1) {
+            background-image: url(../../images/facebook.svg);
+        }
+        &:nth-child(2) {
+            background-image: url(../../images/twitter.svg);
+        }
+        &:nth-child(3) {
+            background-image: url(../../images/instagram.svg);
+        }
+        &:nth-child(4) {
+            background-image: url(../../images/medium.svg);
+        }
+    }
+    &__socials-mail {
+        width: 156px;
+        height: 151px;
+        background-image: url(../../images/mail.svg);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        bottom: -70px;
+        right: 0;
+    }
+}

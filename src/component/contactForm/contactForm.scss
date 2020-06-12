@@ -1,0 +1,42 @@
+.contactForm {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        input,
+        textarea {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 16px;
+            color: #fff;
+            background-color: #0056dd;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            outline: none;
+            box-sizing: border-box;
+            &::placeholder {
+                color: white;
+                opacity: 0.5;
+            }
+        }
+        textarea {
+            min-height: 120px;
+            resize: none;
+        }
+        button {
+            padding: 18px 80px 14px;
+            width: fit-content;
+            border-radius: 32px;
+            font-family: Circe;
+            font-weight: 700;
+            color: #fff;
+            border: none;
+            background-color: #142333;
+            outline: none;
+            cursor: pointer;
+            &:hover{
+                box-shadow: 0 10px 20px rgba(0,0,0,.15);
+            }
+        }
+    }
+}
